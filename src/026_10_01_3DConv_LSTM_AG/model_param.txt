@@ -1,0 +1,22 @@
++-----+--------------------------------+--------------------------------------------------------------------------------------+
+| Nr. | Layer 026_10_01_3DConv_LSTM_AG | Beschreibung Parameter                                                               |
++-----+--------------------------------+--------------------------------------------------------------------------------------+
+|   0 | InputLayer                     |                                                                                      |
+|   1 | Conv3D                         | Filter: 64, Kernel: (3, 3, 3), Stride: (1, 1, 1), Padding: same, Aktivierung: linear |
+|   2 | BatchNormalization             |                                                                                      |
+|   3 | Activation                     | relu                                                                                 |
+|   4 | MaxPooling3D                   | Pooling: (2, 1, 2), Stride: (2, 1, 2)                                                |
+|   5 | Conv3D                         | Filter: 64, Kernel: (3, 3, 3), Stride: (1, 1, 1), Padding: same, Aktivierung: linear |
+|   6 | BatchNormalization             |                                                                                      |
+|   7 | Activation                     | relu                                                                                 |
+|   8 | MaxPooling3D                   | Pooling: (2, 1, 2), Stride: (2, 1, 2)                                                |
+|   9 | Conv3D                         | Filter: 64, Kernel: (3, 3, 3), Stride: (1, 1, 1), Padding: same, Aktivierung: linear |
+|  10 | BatchNormalization             |                                                                                      |
+|  11 | Activation                     | relu                                                                                 |
+|  12 | Flatten                        |                                                                                      |
+|     | (TimeDistributed)              |                                                                                      |
+|  13 | LSTM                           | Units: 32, Aktivierung: tanh                                                         |
+|     |                                | Return Sequences: False, Dropout: 0.2, Recurrent Dropout: 0.2                        |
+|  14 | Dense                          | Neuronen: 128, Aktivierung: relu                                                     |
+|  15 | Dense                          | Neuronen: 3, Aktivierung: softmax                                                    |
++-----+--------------------------------+--------------------------------------------------------------------------------------+

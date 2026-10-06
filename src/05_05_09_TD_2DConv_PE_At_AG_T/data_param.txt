@@ -1,0 +1,17 @@
++-------------------------------------------------------------------+--------+-------------+-------------+---------+------------+
+| Klassen 05_05_09_TD_2DConv_PE_At_AG_T                             | Frames | Anfälle     | Phase       | Patient | Datensätze |
++-------------------------------------------------------------------+--------+-------------+-------------+---------+------------+
+| Anzahl: 4                                                         |     64 | *konvulsiv* | Training    | 9       |      1.286 |
+|                                                                   |        |             | Validierung | 6       |        658 |
+|                                                                   |        |             | Test        | 3       |        966 |
+|                                                                   |        |             | Gesamt      |         |      2.910 |
++-------------------------------------------------------------------+--------+-------------+-------------+---------+------------+
+| Klassenzuordnung                                                  |        | Label       | Train       | Val     |    Indizes |
+| vor einem Anfall                                                  |        | 0           | 488         | 206     |       (01) |
+| während eines Anfalls                                             |        | 1           | 75          | 71      |       (12) |
+| während eines Anfalls mit weiteren Personen                       |        | 2           | 178         | 204     |       (23) |
+| nach einem Anfall                                                 |        | 3           | 545         | 177     |       (34) |
+| während eines Anfalls ohne weitere Personen                       |        | -           | 0           | 0       |       (13) |
+| während eines Anfalls ohne weitere Personen ohne Ende des Anfalls |        | -           | 0           | 0       |       (14) |
+| während eines Anfalls mit weiteren Personen ohne Ende des Anfalls |        | -           | 0           | 0       |       (24) |
++-------------------------------------------------------------------+--------+-------------+-------------+---------+------------+

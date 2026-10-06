@@ -1,0 +1,17 @@
++-------------------------------------------------------------------+--------+---------+-------------+------------+------------+
+| Klassen 026_10_01_3DConv_LSTM_AG                                  | Frames | Anfälle | Phase       | Patient    | Datensätze |
++-------------------------------------------------------------------+--------+---------+-------------+------------+------------+
+| Anzahl: 7                                                         |    120 | all     | Training    | 4, 5, 6, 8 |      4.823 |
+|                                                                   |        |         | Validierung | 2, 9       |      1.311 |
+|                                                                   |        |         | Test        | 3, 7       |      1.015 |
+|                                                                   |        |         | Gesamt      |            |      7.149 |
++-------------------------------------------------------------------+--------+---------+-------------+------------+------------+
+| Klassenzuordnung                                                  |        | Label   | Train       | Val        |    Indizes |
+| vor einem Anfall                                                  |        | 0       | 2.373       | 2.373      |       (01) |
+| während eines Anfalls                                             |        | 1       | 342         | 342        |       (12) |
+| während eines Anfalls mit weiteren Personen                       |        | 1       | 470         | 470        |       (23) |
+| nach einem Anfall                                                 |        | 2       | 2.782       | 2.782      |       (34) |
+| während eines Anfalls ohne weitere Personen                       |        | 1       | 205         | 205        |       (13) |
+| während eines Anfalls ohne weitere Personen ohne Ende des Anfalls |        | 1       | 550         | 550        |       (14) |
+| während eines Anfalls mit weiteren Personen ohne Ende des Anfalls |        | 1       | 427         | 427        |       (24) |
++-------------------------------------------------------------------+--------+---------+-------------+------------+------------+

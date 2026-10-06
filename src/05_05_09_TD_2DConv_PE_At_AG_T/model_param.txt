@@ -1,0 +1,24 @@
++-----+---------------------------------------+--------------------------------------------------------------------------------+
+| Nr. | Schicht 05_05_09_TD_2DConv_PE_At_AG_T | Beschreibung Parameter                                                         |
++-----+---------------------------------------+--------------------------------------------------------------------------------+
+|   0 | InputLayer                            |                                                                                |
+|   1 | Conv2D                                | Filter: 32, Kernel: (3, 3), Stride: (1, 1), Padding: same, Aktivierung: linear |
+|     | (TimeDistributed)                     |                                                                                |
+|   2 | Conv2D                                | Filter: 64, Kernel: (3, 3), Stride: (1, 1), Padding: same, Aktivierung: linear |
+|     | (TimeDistributed)                     |                                                                                |
+|   3 | GlobalAveragePooling2D                |                                                                                |
+|     | (TimeDistributed)                     |                                                                                |
+|   4 | Dense                                 | Neuronen: 128, Aktivierung: relu                                               |
+|   5 | LayerNormalization                    |                                                                                |
+|   6 | Dropout                               | 0,100                                                                          |
+|   7 | TFOpLambda                            |                                                                                |
+|   8 | MultiHeadAttention                    | exception triggered                                                            |
+|   9 | Add                                   |                                                                                |
+|  10 | LayerNormalization                    |                                                                                |
+|  11 | GlobalAveragePooling1D                |                                                                                |
+|  12 | Dense                                 | Neuronen: 32, Aktivierung: sigmoid                                             |
+|  13 | Dropout                               | 0,300                                                                          |
+|  14 | Dense                                 | Neuronen: 32, Aktivierung: sigmoid                                             |
+|  15 | Dropout                               | 0,300                                                                          |
+|  16 | Dense                                 | Neuronen: 5, Aktivierung: softmax                                              |
++-----+---------------------------------------+--------------------------------------------------------------------------------+
